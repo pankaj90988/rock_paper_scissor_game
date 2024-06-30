@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor GAME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-cont">
+        <h1>Lets Play <span>Game With Computer</span></h1>
+        <div class="card">
+            <div class="top-image-container">
+                <div class="computer-image">
+                    <div><img class="computer-generate" src="rock-1.jpeg" name="rock-1" alt=""></div>
+                    <h3 class="player-name computerplayer">Computer</h3>
+
+                </div>
+
+                <div class="player-image">
+                    <div>
+                        <img class="player-generate" src="rock-1.jpeg" name="rock-1" alt="">
+                    </div>
+                    <h3 class="player-name userplayer">Player</h3>
+                </div>
+
+
+            </div>
+            <h1 id="play">Play</h1>
+            <p id="text">😎 </p>
+            <div class="bottom-image-container">
+                <div>
+                    <img onclick="changeImg(event)" name="rock-1"  class="rock-image" src="rock-1.jpeg" alt="">
+                    <h3 class="event-name">Rock</h3>
+                </div>
+                <div>
+                    <img onclick="changeImg(event)" name="paper-2"  class="paper-image" src="paper-2.jpeg" alt="">
+                    <h3 class="event-name">Paper</h3>
+                </div>
+                <div>
+                    <img onclick="changeImg(event)" name="scissor-3"  class="scissor-image" src="scissor-3.jpeg" alt="">
+                    <h3 class="event-name">Scissor</h3>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
