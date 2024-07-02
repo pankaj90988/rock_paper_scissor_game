@@ -5,6 +5,8 @@ let result = document.querySelector("#play");
 let text = document.querySelector("#text");
 let computerName = document.querySelector(".computerplayer");
 let userName = document.querySelector(".userplayer")
+let comoutput = document.querySelector(".computer-output")
+let playoutput = document.querySelector(".player-output")
 
 // Providing a Array to computer to Generate a Random Event
 let arr = ["rock-1", "paper-2", "scissor-3"];
@@ -31,6 +33,8 @@ function changeImg(e) {
   computerName.style.color = "black"
   userName.innerHTML = "Player"
   userName.style.color = "black"
+  comoutput.innerHTML = "Rock"
+  playoutput.innerHTML = "Rock"
 
   setTimeout(() => {
     text.innerHTML = "Rock"
@@ -61,6 +65,8 @@ function changeImg(e) {
       result.innerHTML = "Match Draw";
       result.style.color = "orangered"
       text.innerHTML = "Try Again"
+      comoutput.innerHTML = "Same"
+      playoutput.innerHTML = "Same"
 
     } else if (playerGenerate == "rock-1" && computerGenerate == "paper-2") {
       console.log("Computer won the Match");
@@ -68,6 +74,8 @@ function changeImg(e) {
       text.innerHTML = "कोशिश करने वालों की कभी हार नही होती!🤪 Try Again";
       computerName.innerHTML = "Computer ✅"
       computerName.style.color = "red"
+      comoutput.innerHTML = "Paper"
+      playoutput.innerHTML = "Rock"
 
     } else if (playerGenerate == "paper-2" && computerGenerate == "rock-1") {
       console.log("You won the Match");
@@ -76,6 +84,8 @@ function changeImg(e) {
       text.innerHTML = "🥳🥳🥳🥳";
       userName.innerHTML = "Player ✅"
       userName.style.color = "red"
+      comoutput.innerHTML = "Rock"
+      playoutput.innerHTML = "Paper"
 
     } else if (playerGenerate == "scissor-3" && computerGenerate == "paper-2") {
       console.log("You won the Match");
@@ -84,6 +94,8 @@ function changeImg(e) {
       text.innerHTML = "🥳🥳🥳🥳";
       userName.innerHTML = "Player ✅"
       userName.style.color = "red"
+      comoutput.innerHTML = "Paper"
+      playoutput.innerHTML = "Scissor"
 
     } else if (playerGenerate == "paper-2" && computerGenerate == "scissor-3") {
       console.log("Computer won the Match");
@@ -91,6 +103,8 @@ function changeImg(e) {
       text.innerHTML = "हौसला बुलंद रखिए!😉 Try Again";
       computerName.innerHTML = "Computer ✅"
       computerName.style.color = "red"
+      comoutput.innerHTML = "Scissor"
+      playoutput.innerHTML = "Paper"
 
 
     } else if (playerGenerate == "scissor-3" && computerGenerate == "rock-1") {
@@ -99,6 +113,8 @@ function changeImg(e) {
       text.innerHTML = "कोशिश करने वालों की कभी हार नही होती!🤪 Try Again";
       computerName.innerHTML = "Computer ✅"
       computerName.style.color = "red"
+      comoutput.innerHTML = "Rock"
+      playoutput.innerHTML = "Scissor"
 
     } else if (playerGenerate == "rock-1" && computerGenerate == "scissor-3") {
       console.log("You won the Match");
@@ -107,6 +123,8 @@ function changeImg(e) {
       text.innerHTML = "🥳🥳🥳🥳";
       userName.innerHTML = "Player ✅"
       userName.style.color = "red"
+      comoutput.innerHTML = "Scissor"
+      playoutput.innerHTML = "Rock"
 
     }
   }, 1700);

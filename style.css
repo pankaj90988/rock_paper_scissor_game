@@ -30,13 +30,17 @@ span {
 .card {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
     border: 2px solid green;
     gap: 1.2rem;
     border-radius: 10px;
     box-shadow: 5px 5px 20px;
 }
-
+@media (max-width:850px){
+    .card{
+        width: 95%;
+    }
+}
 .top-image-container {
     display: flex;
     justify-content: space-between;
@@ -54,9 +58,14 @@ span {
 }
 
 .computer-generate {
+    width: 5rem;
+    height: 5rem;
     transform: scaleX(-1);
 }
-
+.player-generate{
+    width: 5rem;
+    height: 5rem;
+}
 .animateLeft {
     animation: shakeLeft 1s infinite;
 }
@@ -95,10 +104,21 @@ span {
 
 }
 
-
-
+.output{
+    margin-top: 0.4rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.computer-output{
+    color: orangered;
+}
+.player-output{
+    color: green;
+}
 .player-name {
-    margin-top: 0.6rem;
+    margin-top: 0.3rem;
     text-align: center;
 }
 
@@ -118,8 +138,8 @@ span {
 .bottom-image-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 1rem;
-    padding: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
     /* border: 2px solid blue; */
     /* border-radius: 10px; */
 }
