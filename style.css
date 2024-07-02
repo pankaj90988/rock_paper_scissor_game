@@ -38,7 +38,7 @@ span {
 }
 @media (max-width:770px){
     .card{
-        width: 100%;
+        width: 100vw;
     }
 }
 .top-image-container {
