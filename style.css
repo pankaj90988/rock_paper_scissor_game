@@ -7,6 +7,7 @@
 
 body {
     background: rgba(231, 226, 226, 0.883);
+    font-size: clamp(16px, 1.1rem, 3vw);
 }
 
 body img {
@@ -25,6 +26,8 @@ span {
     height: 100vh;
     gap: 0.7rem;
     padding: 0 2rem;
+    margin: auto;
+    /* border: 2px solid blue; */
 }
 
 .card {
@@ -36,17 +39,24 @@ span {
     border-radius: 10px;
     box-shadow: 5px 5px 20px;
 }
-@media (max-width:770px){
-    .card{
-        width: 100vw;
+
+@media (max-width:660px) {
+    .card {
+        padding: 1rem;
+    }
+    .main-cont{
+        padding: 0 2rem;
     }
 }
+
 .top-image-container {
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
     border: 2px solid green;
     border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .top-image-container img {
@@ -57,15 +67,24 @@ span {
     height: 11.875rem;
 }
 
+.contain {
+    width: 20rem;
+    height: 12rem;
+    /* border: 2px solid blue; */
+}
+
 .computer-generate {
-    width: 5rem;
-    height: 5rem;
+    width: 100%;
+    object-fit: contain;
     transform: scaleX(-1);
 }
-.player-generate{
-    width: 5rem;
-    height: 5rem;
+
+.player-generate {
+    width: 100%;
+    object-fit: contain;
+    /* height: 5rem; */
 }
+
 .animateLeft {
     animation: shakeLeft 1s infinite;
 }
@@ -104,19 +123,22 @@ span {
 
 }
 
-.output{
+.output {
     margin-top: 0.4rem;
     padding: 0.5rem;
     text-align: center;
     font-size: 1.1rem;
     font-weight: 600;
 }
-.computer-output{
+
+.computer-output {
     color: orangered;
 }
-.player-output{
+
+.player-output {
     color: green;
 }
+
 .player-name {
     margin-top: 0.3rem;
     text-align: center;
@@ -181,7 +203,7 @@ span {
 }
 
 
-.bottom-all{
+.bottom-all {
     display: flex;
     flex-direction: column;
     justify-content: center;
