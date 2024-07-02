@@ -30,7 +30,7 @@ function changeImg(e) {
   computerName.innerHTML = "Computer"
   computerName.style.color = "black"
   userName.innerHTML = "Player"
-      userName.style.color = "black"
+  userName.style.color = "black"
 
   setTimeout(() => {
     text.innerHTML = "Rock"
@@ -94,7 +94,7 @@ function changeImg(e) {
 
 
     } else if (playerGenerate == "scissor-3" && computerGenerate == "rock-1") {
-      console.log("Computer wins the Match");
+      console.log("Computer won the Match");
       result.innerHTML = "Computer won the Match";
       text.innerHTML = "कोशिश करने वालों की कभी हार नही होती!🤪 Try Again";
       computerName.innerHTML = "Computer ✅"
