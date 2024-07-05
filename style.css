@@ -55,6 +55,9 @@ span {
         margin-bottom: 0.6rem;
         
     }
+    .bottom-text-cont{
+        margin-top: -1rem;
+    }
 }
 
 
@@ -166,8 +169,8 @@ span {
 .bottom-image-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 0.5rem;
-    padding: 0.5rem 1rem;
+    margin-top: 0.9rem;
+    padding: 0 0.6rem;
     /* border: 2px solid blue; */
   
 }
@@ -222,4 +225,11 @@ span {
     justify-content: center;
     align-items: center;
     /* border: 1px solid greenyellow; */
+}
+.bottom-text-cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -0.7rem;
+    /* border: 2px solid red; */
 }
